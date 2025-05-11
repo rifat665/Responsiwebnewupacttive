@@ -41,7 +41,7 @@ a{
 }
 .head{
     width: 100%;
-    height: 100px;
+    height: 50px;
     background-color: rgba(0, 0, 0, 0.649);
     position: sticky;
     top: 0;
