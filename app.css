@@ -582,29 +582,3 @@ option{
 #request:hover, #requests:hover, #requestsng:hover{
     background: black;
 }
-.footer{
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    position: absolute;
-}
-.mediaBox{
-    width: fit-content;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-}
-.copyright{
-    background-color: transparent;
-    font-size: 14px;
-    width: 200px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    color: gray;
-    font-weight: 300;
-}
