@@ -38,7 +38,6 @@ a{
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    padding: 10px;
 }
 .head{
     width: 100%;
@@ -480,7 +479,7 @@ option{
     margin-top: 5px;
 }
 .list{
-    width: 100%;
+    width: 95%;
     height: 180px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.20) 0px 0px 20px;
