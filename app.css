@@ -431,7 +431,8 @@ span{
 }
 #speedCreat{
     width: 460px;
-    height: 830px;
+    max-width: 90%;
+    height: 100%;
     position: fixed;
     opacity: 0;
     z-index: -1;
