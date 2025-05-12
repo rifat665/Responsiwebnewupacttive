@@ -304,7 +304,7 @@ span{
     background-clip: none;
 }
 .dropPack{
-    width: 450px;
+    width: 400px;
     height: 600px;
     position: relative;
     top: 10px;
@@ -369,8 +369,8 @@ label{
     background-color: transparent;
 }
 input, textarea{
-    width: 95%;
-    height: 50px;
+    width: 90%;
+    height: 30px;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.39);
     background-color: transparent;
@@ -400,6 +400,7 @@ input:focus, textarea:focus{
     appearance: none;
     font-size: 18px;
     transition: all 0.2s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.39);
 }
 #pack:focus{
     font-size: 22px;
