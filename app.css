@@ -494,6 +494,7 @@ input, textarea{
     padding-left: 20px;
     font-size: 18px;
     color: white;
+    margin-left: 10px;
     transition: all 0.2s ease-in-out;
 }
 input:focus, textarea:focus{
@@ -502,7 +503,7 @@ input:focus, textarea:focus{
     height: 50px;
 }
 #pack{
-    width: 100%;
+    width: 90%;
     color: white;
     padding: 12px;
     -webkit-backdrop-filter: blur(30px);
