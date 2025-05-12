@@ -266,7 +266,7 @@ span{
 }
 #canvas{
     width: 460px;
-    max-width: 98%;
+    max-width: 460px;
     height: 250px;
     position: relative;
     left: 50%;
