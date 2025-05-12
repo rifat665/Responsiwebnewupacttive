@@ -516,6 +516,7 @@ input:focus, textarea:focus{
     font-size: 18px;
     transition: all 0.2s ease-in-out;
     border: 1px solid rgba(255, 255, 255, 0.39);
+    position: relative;
     left: 50%;
     transform: translate(-50%);
 }
