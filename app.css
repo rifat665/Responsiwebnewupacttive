@@ -484,7 +484,7 @@ option{
 }
 .list{
     width: 100%;
-    max-width: 400px
+    max-width: 95%;
     height: 180px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.20) 0px 0px 20px;
