@@ -503,7 +503,7 @@ input:focus, textarea:focus{
     height: 50px;
 }
 #pack{
-    width: 90%;
+    width: 95%;
     color: white;
     padding: 12px;
     -webkit-backdrop-filter: blur(30px);
@@ -527,8 +527,8 @@ option{
     z-index: 90;
 }
 #my-form-button{
-    width: 100%;
-    padding: 10px;
+    width: 90%;
+    padding: 5px 10px;
     font-size: 22px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.112);
