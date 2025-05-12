@@ -26,7 +26,7 @@ const closePolitic = document.getElementById("closePolitic");
 privacyBtn.addEventListener("click", () =>{
     menuList.style.display = 'none';
     centerBox.style.height = '600px';
-    politic.style.height = '565px';
+    politic.style.height = '580px';
     politic.style.zIndex = '1';
     politic.style.opacity = '1';
 });
