@@ -103,7 +103,8 @@ a{
     padding-right: 4px;
     -webkit-appearance: none;
     appearance: none;
-    font-size: 20px;
+    font-size: 18;
+    border: none;
 }
 .content{
     width: 100%;
