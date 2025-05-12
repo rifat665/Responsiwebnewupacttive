@@ -305,7 +305,6 @@ span{
 }
 .dropPack{
     width: 100%;
-    max-width: 95%;
     height: 600px;
     position: relative;
     top: 10px;
@@ -484,7 +483,7 @@ option{
 }
 .list{
     width: 100%;
-    max-width: 95%;
+    max-width: 400px;
     height: 180px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.20) 0px 0px 20px;
