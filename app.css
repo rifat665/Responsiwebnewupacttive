@@ -313,6 +313,7 @@ span{
     background-color: transparent;
     display: grid;
     padding: 0;
+    justify-content: center;
 }
 #speedCreat{
     width: 460px;
@@ -489,7 +490,6 @@ option{
     position: relative;
     transition: 0.2s ease-in-out;
     align-items: center;
-    justify-content: center;
 }
 .imgBox{
     width: 180px;
