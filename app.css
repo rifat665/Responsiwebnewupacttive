@@ -268,8 +268,8 @@ span{
     background-clip: none;
 }
 #canvas{
-    width: 100%;
-    max-width: 400px;
+    width: 90%;
+    max-width: 90%;
     height: 250px;
     position: relative;
     left: 50%;
