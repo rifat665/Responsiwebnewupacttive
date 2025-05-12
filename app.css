@@ -489,6 +489,7 @@ option{
     position: relative;
     transition: 0.2s ease-in-out;
     align-items: center;
+    justify-content: center;
 }
 .imgBox{
     width: 180px;
@@ -543,27 +544,19 @@ option{
     background-color: transparent;
     border-radius: 20px;
 }
-#avantage{
+#avantage, #annonce, #sponsored{
     width: fit-content;
     background-color: transparent;
     background: -webkit-linear-gradient(#69a868, #bd44d6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: none;
-    font-size: 22px;
+    font-size: 20px;
 }
 .textBox p{
     margin-top: 8px;
     background-color: transparent;
-}
-#annonce, #sponsored{
-    width: fit-content;
-    background-color: transparent;
-    background: -webkit-linear-gradient(#69a868, #bd44d6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: none;
-    font-size: 22px;
+    font-size: 18px;
 }
 #request, #requests, #requestsng{
     background: linear-gradient(90deg, rgb(87, 154, 185), rgb(157, 86, 168));
