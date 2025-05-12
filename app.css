@@ -33,7 +33,7 @@ a{
     width: 100%;
     max-width: 900px;
     height: 100vh;
-    background-color: white;
+    background-color: red;
     overflow-y: scroll;
     position: relative;
     left: 50%;
