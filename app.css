@@ -317,7 +317,6 @@ span{
     background-color: transparent;
     display: grid;
     padding: 0;
-    justify-content: center;
 }
 .list{
     width: 100%;
