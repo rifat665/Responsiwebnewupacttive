@@ -516,6 +516,8 @@ input:focus, textarea:focus{
     font-size: 18px;
     transition: all 0.2s ease-in-out;
     border: 1px solid rgba(255, 255, 255, 0.39);
+    left: 50%;
+    transform: translate(-50%);
 }
 #pack:focus{
     font-size: 22px;
@@ -538,6 +540,9 @@ option{
     cursor: pointer;
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 #my-form-button:hover{
     background-color: black;
