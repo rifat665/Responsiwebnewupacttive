@@ -30,8 +30,8 @@ a{
     background-color: transparent;
 }
 .container{
-    width: 4050px;
-    max-width: 450px;
+    width: 100%;
+    max-width: 900px;
     height: 100vh;
     background-color: white;
     overflow-y: scroll;
