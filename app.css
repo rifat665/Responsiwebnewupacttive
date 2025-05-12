@@ -481,6 +481,7 @@ label{
     color: white;
     font-size: 22px;
     background-color: transparent;
+    margin-left: 20px;
 }
 input, textarea{
     width: 90%;
