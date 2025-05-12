@@ -6,10 +6,12 @@
     menuBtn.addEventListener("click", ()=>{
         if(openMenu){
             menu.style.zIndex = '-1';
+            menu.style.opacity = '0';
             menuBtn.classList = 'menuBtn bi bi-three-dots';
         }
         else{
             menu.style.zIndex = '10';
+            menu.style.opacity = '1';
             menuBtn.classList = 'menuBtn bi bi-x';
         }
         openMenu = !openMenu;
@@ -42,7 +44,7 @@ const closeInfo = document.getElementById("closeInfo");
 
 aboutBtn.addEventListener("click", () =>{
     menuList.style.display = 'none';
-    infocontent.style.height = '400px';
+    infocontent.style.height = '360px';
     infocontent.style.zIndex = '1';
     infocontent.style.opacity = '1';
 });
@@ -212,7 +214,7 @@ const translations = {
       privacy: "Datenschutz-Bestimmungen",
       board: "Schild",
       tittle: "Meinungen",
-      avantage: "Vorteile",
+      avantage: "QR MENU",
       security: "Es ist hygienisch unbedenklich.",
       oppression: "Es fallen keine Druckkosten an.",
       speed: "Mobilkompatibel und schneller Zugriff.",
@@ -251,7 +253,7 @@ const translations = {
       privacy: "Politique de confidentialité",
       board: "Tableau d'affichage",
       tittle: "Avis",
-      avantage: "Avantages",
+      avantage: "QR-MENU",
       security: "C'est sûr en termes d'hygiène.",
       oppression: "Il n'y a aucun coût d'impression.",
       speed: "Compatible mobile et accès rapide.",
