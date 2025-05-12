@@ -431,8 +431,8 @@ span{
 }
 #speedCreat{
     width: 460px;
-    max-width: 90%;
-    height: 100%;
+    max-width: 95%;
+    height: 830px;
     position: fixed;
     opacity: 0;
     z-index: -1;
@@ -483,7 +483,7 @@ label{
     background-color: transparent;
 }
 input, textarea{
-    width: 95%;
+    width: 90%;
     height: 50px;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.39);
