@@ -306,8 +306,9 @@ span{
     background-clip: none;
 }
 .dropPack{
-    width: 100%;
-    height: 600px;
+    width: 90%;
+    max-width: 90%;
+    height: fit-content;
     position: relative;
     top: 10px;
     left: 50%;
@@ -317,6 +318,103 @@ span{
     display: grid;
     padding: 0;
     justify-content: center;
+}
+.list{
+    width: 100%;
+    max-width: 90%;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 0px 20px;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    align-items: center;
+}
+.imgBox{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.10) 10px 0px 10px;
+    display: flex;
+    overflow: hidden;
+    background-image: url(qr\ menu.jpg);
+    background-size: 100%;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+.imgBox2{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.10) 10px 0px 10px;
+    display: flex;
+    overflow: hidden;
+    background-image: url(annonce.jpg);
+    background-size: 100%;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.imgBox3{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.10) 10px 0px 10px;
+    display: flex;
+    overflow: hidden;
+    background-image: url(SPONSORED.png);
+    background-size: 100%;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.imgBox:hover, .imgBox2:hover{
+    opacity: 0.8;
+}
+.textBox{
+    width: 260px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-0%, -50%);
+    background-color: transparent;
+    border-radius: 20px;
+}
+#avantage, #annonce, #sponsored{
+    width: fit-content;
+    background-color: transparent;
+    background: -webkit-linear-gradient(#69a868, #bd44d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: none;
+    font-size: 20px;
+}
+.textBox p{
+    margin-top: 8px;
+    background-color: transparent;
+    font-size: 18px;
+}
+#request, #requests, #requestsng{
+    background: linear-gradient(90deg, rgb(87, 154, 185), rgb(157, 86, 168));
+    position: absolute;
+    width: 190px;
+    right: 15px;
+    bottom: 0;
+    padding: 4px 6px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#request:hover, #requests:hover, #requestsng:hover{
+    background: black;
 }
 #speedCreat{
     width: 460px;
@@ -482,101 +580,4 @@ option{
     background-color: transparent;
     margin-left: 10px;
     margin-top: 5px;
-}
-.list{
-    width: 100%;
-    max-width: 400px;
-    height: 180px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.20) 0px 0px 20px;
-    border-radius: 20px;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    transition: 0.2s ease-in-out;
-    align-items: center;
-}
-.imgBox{
-    width: 180px;
-    height: 180px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.10) 10px 0px 10px;
-    display: flex;
-    overflow: hidden;
-    background-image: url(qr\ menu.jpg);
-    background-size: 100%;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    border-radius: 15px;
-    margin-left: 5px;
-}
-.imgBox2{
-    width: 180px;
-    height: 180px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.10) 10px 0px 10px;
-    display: flex;
-    overflow: hidden;
-    background-image: url(annonce.jpg);
-    background-size: 100%;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    border-radius: 20px;
-}
-.imgBox3{
-    width: 180px;
-    height: 180px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.10) 10px 0px 10px;
-    display: flex;
-    overflow: hidden;
-    background-image: url(SPONSORED.png);
-    background-size: 100%;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    border-radius: 20px;
-}
-.imgBox:hover, .imgBox2:hover{
-    opacity: 0.8;
-}
-.textBox{
-    width: 260px;
-    height: 150px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(-0%, -50%);
-    background-color: transparent;
-    border-radius: 20px;
-}
-#avantage, #annonce, #sponsored{
-    width: fit-content;
-    background-color: transparent;
-    background: -webkit-linear-gradient(#69a868, #bd44d6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: none;
-    font-size: 20px;
-}
-.textBox p{
-    margin-top: 8px;
-    background-color: transparent;
-    font-size: 18px;
-}
-#request, #requests, #requestsng{
-    background: linear-gradient(90deg, rgb(87, 154, 185), rgb(157, 86, 168));
-    position: absolute;
-    width: 190px;
-    right: 15px;
-    bottom: 0;
-    padding: 4px 6px;
-    border: 1px solid gray;
-    border-radius: 50px;
-    font-size: 16px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-#request:hover, #requests:hover, #requestsng:hover{
-    background: black;
 }
