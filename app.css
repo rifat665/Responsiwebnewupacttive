@@ -567,6 +567,7 @@ option{
 }
 #warningBox{
     width: 400px;
+    max-width: 90%;
     height: 150px;
     position: absolute;
     bottom: 30px;
