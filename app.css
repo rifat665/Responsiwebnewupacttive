@@ -305,7 +305,7 @@ span{
 }
 .dropPack{
     width: 100%;
-    max-width: 400px
+    max-width: 95%;
     height: 600px;
     position: relative;
     top: 10px;
