@@ -310,62 +310,35 @@ formClose.addEventListener("click", () => {
 });
 //REQUEST
 //FORM GÖNDER
-const form = document.getElementById("my-form");
-const submitBtn = document.getElementById("my-form-button");
-const requiredFields = form.querySelectorAll("input[required], textarea[required]");
-
-// Alanları kontrol eden fonksiyon
-function checkFormValidity() {
-  const allFilled = Array.from(requiredFields).every(field => field.value.trim() !== "");
-  submitBtn.disabled = !allFilled;
-}
-
-// Tüm inputlara dinleyici ekle
-requiredFields.forEach(field => {
-  field.addEventListener("input", checkFormValidity);
-});
-
-// Mevcut textarea input yüksekliğini ayarlama
-const textarea = document.getElementById("messages");
-textarea.addEventListener("input", () => {
-  textarea.style.height = "0px"; // önce sıfırla
-  textarea.style.height = Math.min(textarea.scrollHeight, 60) + "px";
-  textarea.style.padding = '10px';
-});
-
-// Form gönderme işlemi
-async function handleSubmit(event) {
-  event.preventDefault();
-  const status = document.getElementById("my-form-status");
-  const data = new FormData(event.target);
-
-  fetch(event.target.action, {
-    method: form.method,
-    body: data,
-    headers: { 'Accept': 'application/json' }
-  }).then(response => {
-    if (response.ok) {
-      status.classList = "bi bi-check-circle";
-      status.style.opacity = '1';
-      status.innerHTML = "Talebiniz alınmıştır...";
-      form.reset();
-      submitBtn.disabled = true; // reset sonrası tekrar pasifleştir
-    } else {
-      response.json().then(data => {
-        if (Object.hasOwn(data, 'errors')) {
-          status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
-        } else {
-          status.classList = 'class="bi bi-dash-circle-fill';
-          status.innerHTML = "İleti gönderilemedi...";
-        }
-      });
-    }
-  }).catch(error => {
-    status.classList = 'class="bi bi-dash-circle-fill';
-    status.innerHTML = "İleti gönderilemedi...";
-  });
-}
-
-form.addEventListener("submit", handleSubmit);
+var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
 
 //FORM GÖNDER
